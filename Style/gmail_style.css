@@ -1,0 +1,154 @@
+body
+{
+	background-color: #f8fbff;
+}
+.header_div
+{
+	background-color:#f8fbff;
+}
+.menu_button_div
+{
+	background-color:#eaf1fb;
+}
+.menu_button_div button
+{
+	width:fit-content;
+	background:none;
+	border:none;
+	border-radius:50%;
+	padding:13px 16px;
+}
+.menu_button_div button:hover
+{
+	background-color:#3c404314;
+}
+.menu_button_div img
+{
+	width:18px;
+}
+.left_nav
+{
+	background-color:#eaf1fb;
+}
+.left_nav button
+{
+	width:fit-content;
+	background:none;
+	border:none;
+	border-radius:50%;
+	padding:13px 16px;
+}
+.left_nav button:hover
+{
+	background-color:#3c404314;
+}
+.left_nav img
+{
+	width:18px;
+}
+.search_box
+{
+	padding:8px 6px;
+	background-color:#eaf1fb;
+	border-radius:25px;
+	display:flex;
+}
+.search_box button
+{
+	background:none;
+	border:none;
+	border-radius:50%;
+	width:40px;
+	height:36px;
+	cursor:pointer;
+}
+.search_box button:hover
+{
+	background-color:#3c404314;	
+}
+.search_button img
+{
+	width:18px;
+	opacity:0.7;
+	position:relative;
+}
+.options_button
+{
+	margin-left:auto;
+	margin-right:4px;
+}
+.options_button img
+{
+	width:22px;
+	height:24px;
+	opacity:0.9;
+	position:relative;
+}
+.search_box input
+{
+	background:none;
+	border:none;
+	font-size:16px;
+	width:100%;
+}
+.search_box input:focus
+{
+	outline:none;
+}
+.notification_button
+{
+	background-color:#eaf1fb;
+	border:none;
+	border-radius:25px;
+	font-size:14px;
+	display:flex;
+	align-items: center;
+	font-weight:bold;
+	color:#666;
+	cursor:pointer;
+}
+.notification_button:hover
+{
+	background-color:#dfe8f5;
+}
+.arrow_down
+{
+	margin:0 5px 0 10px;
+	position:relative;
+	top:-4px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	border:solid #444;
+	border-width: 0 1px 1px 0;
+	display: inline-block;
+	padding:2px;
+}
+.dot {
+	height: 12px;
+	width: 12px;
+	background-color: #1e8e3e;
+	border-radius: 50%;
+	display: inline-block;
+	margin:0 7px;
+}
+.header_icons
+{
+	background:none;
+	border:none;
+	border-radius:50%;
+	padding:8px 10px;
+	margin:auto;
+	cursor:pointer;
+}
+.header_icons:hover
+{
+	background-color:#3c404314;
+}
+.header_icons img
+{
+	position:relative;
+	top:1px;
+	width:20px;
+	height:20px;
+	opacity:0.7;
+}
