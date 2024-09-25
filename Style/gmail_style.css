@@ -278,8 +278,8 @@ nav
 }
 .mail_numbers 
 {
-	font-size:14px;
-	color:#444;
+	font-size:13px;
+	color:#888;
 }
 .mail_numbers:hover
 {
@@ -325,7 +325,7 @@ nav
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;
-	width:20%;
+	width:fit-content;
 }
 .message_content
 {
@@ -484,4 +484,10 @@ nav
 .message:hover 	.message_time
 {
 	display:none;
+}
+.message_body_footer
+{
+	background:#fff;
+	font-size:12px;
+	color:#666;
 }
