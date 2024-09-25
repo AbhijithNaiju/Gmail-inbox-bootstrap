@@ -8,82 +8,659 @@
 		<link rel="stylesheet" href="style/gmail_style.css">
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="container-fluid vh-100">
 <!--Header div-->
-			<div class="border row d-none d-md-flex header_div border border-danger" >
+			<div class=" row d-none d-md-flex header_div" >
 				<div class="col-4 col-lg-3 ">
-					<div class="row">
-						<div class="col-3 col-lg-3 menu_button_div justify-content-center d-flex border border-danger">
+					<div class="row ">
+						<div class="col-3 col-lg-3 menu_button_div justify-content-center d-flex ">
 							<button class="my-1">
 								<img src="Assets/images/menu.png" alt="Image Not Found">
 							</button>
 						</div>
-						<div class="col-9 col-lg-9 border border-danger d-flex align-items-center">
+						<div class="col-9 col-lg-9  d-flex align-items-center">
 							<a href="">
 								<img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="Image Not Found" class="logo">
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-8 col-lg-9  border border-success">
-					<div class="row border border-success h-100 ">
-						<div class="col-7 border border-success">
+				<div class="col-8 col-lg-9 ">
+					<div class="row h-100 pt-1">
+						<div class="col-6 col-lg-7">
 							<div class="search_box">
 								<button class="search_button"><img src="Assets/images/search.png" alt="Image Not Found" ></button>
 								<input type="text" placeholder="Search mail">
 								<button class="options_button"><img src="Assets/images/search_options.png" alt="Image Not Found" ></button>
 							</div>
 						</div>
-						<div class="col-5 border border-success">
+						<div class="col-6 col-lg-5">
 							<div class="row  h-100">
-								<div class="col-4 border border-danger">
-									<button class="notification_button h-100 w-100"><b class="dot"></b> <label>Active</label><i class="arrow_down"></i></button>
+								<div class="col-0 col-lg-4   d-none d-lg-block">
+									<button class="notification_button d-flex justify-content-around h-100 w-100"><b class="dot"></b> <label class="d-none d-xl-block">Active</label><i class="arrow_down"></i></button>
 								</div>
-								<div class="col-4 d-flex">
-									<button class="header_icons">
-										<img src="Assets/images/question-mark.png" alt="Image Not Found">
+								<button class="header_icons d-flex align-items-center justify-content-center col-2 col-lg-1">
+									<img src="Assets/images/question-mark.png" alt="Image Not Found">
+								</button>
+								<button class="header_icons d-flex align-items-center justify-content-center col-2 col-lg-1">
+									<img src="Assets/images/settings.png" alt="Image Not Found">
+								</button>
+								<button class="header_icons d-flex align-items-center justify-content-center col-2 col-lg-1">
+									<img src="Assets/images/apps.png" alt="Image Not Found">
+								</button>
+								<div class="col-6 col-lg-5 d-flex justify-content-center">
+									<button class="profile">
+										<img src="Assets/images/techversant.png" alt="Image Not Found">
+										<b>A</b>
 									</button>
-									<button class="header_icons">
-										<img src="Assets/images/settings.png" alt="Image Not Found">
-									</button>
-									<button class="header_icons">
-										<img src="Assets/images/apps.png" alt="Image Not Found">
-									</button>
-								</div>
-								<div class="col-4">
-									3
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-<!--End of header-->
 <!--Body-->
-			<div class="border row body_div border border-danger" >
-				<div class="col-0 col-md-4 col-lg-3 d-none d-md-block">
-					<nav class="row">
-						<div class="col-3 col-lg-3 menu_button_div justify-content-center align-items-center d-flex flex-column border border-danger">
-							<button class="">
-								<img src="Assets/images/menu.png" alt="Image Not Found">
-							</button>
-							<button class="">
-								<img src="Assets/images/menu.png" alt="Image Not Found">
-							</button>
-							<button class="">
-								<img src="Assets/images/menu.png" alt="Image Not Found">
-							</button>
+			<div class="row body_div" >
+				<div class="col-0 col-md-4 col-lg-3  d-none d-md-block h-100">
+					<nav class="row ">
+<!--left nav-->
+						<div class="col-3 col-lg-3 left_nav justify-content-start align-items-center d-flex flex-column">
+							<a href="" class="nav_item nav_active d-flex flex-column align-items-center">
+								<div class="active_nav_image justify-content-center d-flex mt-4 px-3 py-2 rounded-4">
+									<img src="Assets/images/mail.png" alt="Image Not Found">
+								</div>
+								<span class="text-align-center">Mail</span>
+							</a>
+							<a href="" class="nav_item d-flex flex-column align-items-center">
+								<div class="nav_image justify-content-center d-flex mt-4 px-3 py-2 rounded-4">
+									<img src="Assets/images/message.png" alt="Image Not Found" >
+								</div>
+								<span>Chat</span>
+							</a>
+							<a href="" class="nav_item d-flex flex-column align-items-center">
+								<div class="nav_image justify-content-center d-flex mt-4 px-3 py-2 rounded-4">
+									<img src="Assets/images/google-meet.png" alt="Image Not Found" >
+								</div>
+								<span >Meet</span>
+							</a>
 						</div>
-						<div class="col-9 col-lg-9 border border-danger d-flex align-items-center">
-							8
+<!--Main menu-->
+						<div class="col-9 col-lg-9 d-flex align-items-start ">	
+							<div class="row w-100 ps-2">
+								<div class="col-12  my-2 w-100 p-0">
+									<button class="compose rounded-4 w-75 w-sm-50 py-3 d-flex justify-content-around">
+										<img src="Assets/images/pen.png" alt="Image Not Found"> <span>Compose</span>
+									</button>
+								</div>
+								<div class="col-12  rounded-5 mt-1 active_menu">
+									<div class=" d-flex align-items-center">
+										<img src="Assets/images/inbox.png" alt="Image Not Found" class="m-2">
+										<span>Inbox</span>
+									</div>
+								</div>
+								<div class="col-12 rounded-5 menu_items">
+									<div class="d-flex align-items-center">
+										<img src="Assets/images/star.png" alt="Image Not Found" class="m-2">
+										<span>Starred</span>
+									</div>
+								</div>
+								<div class="col-12 rounded-5 menu_items">
+									<div class="d-flex align-items-center">
+										<img src="Assets/images/clock_2.png" alt="Image Not Found" class="m-2">
+										<span>Snoozed</span>
+									</div>
+								</div>
+								<div class="col-12 rounded-5 menu_items">
+									<div class="d-flex align-items-center">
+										<img src="Assets/images/send.png" alt="Image Not Found" class="m-2">
+										<span>Sent</span>
+									</div>
+								</div>
+								<div class="col-12 rounded-5 menu_items">
+									<div class="d-flex align-items-center">
+										<img src="Assets/images/draft.png" alt="Image Not Found" class="m-2">
+										<span>Draft</span>
+									</div>
+								</div>
+								<div class="col-12 rounded-5 menu_items">
+									<div class="d-flex align-items-center">
+										<img src="Assets/images/angle_down.png" alt="Image Not Found" class="m-2">
+										<span>More</span>
+									</div>
+								</div>
+								<div class="col-12 menu_label py-1 d-flex align-items-center justify-content-between  ">
+									<span>Labels</span>
+									<img src="Assets/images/add.png" alt="Image not found">
+								</div>
+							</div>
 						</div>
 					</nav>
 				</div>
 <!--Message part-->
-				<div class="col-12 col-md-8 col-lg-9  border border-success">
-					<div class="row border border-primary h-100">
-						9
+				<div class="col-12 col-md-8 col-lg-9  p-0 mt-1 main_body_right h-100">
+					<div class=" mx-1 my-1 message_container rounded-4 bg-white">
+						<div class=" m-1 px-2 d-none d-md-flex justify-content-between align-items-center">
+							<div  class="col-4 d-flex">
+								<div class="d-flex align-items-center  rounded-3 ms-0">
+									<div class="m-1 p-1 rounded select_button">
+  										<input class="form-check-input border-dark " type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									</div>
+									<button class="select_button_arrow  rounded py-1">
+										<img src="Assets/images/arrow-drop-down.png" alt="Image not found">
+									</button>
+								</div>
+								<div class=" align-items-center d-flex rounded-5 px-2 justify-content-center refresh_button">
+									<button class=""><img src="Assets/images/refresh.png" alt="Image not found"></button>
+								</div>
+								<div class="align-items-center d-flex rounded-5  px-2 justify-content-center three_dot">
+									<button class=""><img src="Assets/images/3-dot.png" alt="Image not found"></button>
+								</div>
+							</div>
+							<div class="col-4">
+							</div>
+							<div  class="col-4 msg_header_right d-flex justify-content-end align-items-center">
+								<div class="py-2 rounded mail_numbers" rounded mail_numbers"><button class="">1-44 of 44</button></div>
+															
+								<div class="p-2">
+									<button><img src="Assets/images/nav-arrow-left.png" alt="Image not found"></button>
+								</div>
+								<div class="p-2">
+									<button><img src="Assets/images/nav-arrow-right.png" alt="Image not found"></button>
+								</div>
+							</div> 
+	
+						</div>
+						<div class="row  m-1  d-flex d-md-none">
+							<div class="col-12  notification_bar_mobile px-2 py-1">
+								<div>
+									<img src="Assets/images/FAV-gmail.png" alt="Image not found">
+								</div>
+								<span>
+									<span class="mobile_notif_dark">	
+										Upgrade to smarter Gmail
+									</span>
+									<span class="mobile_notif_light">
+										Secure, fast & organized email
+									</span>
+								</span>
+								<a href="">OPEN</a>
+							</div>
+							<div class="col-12 message_header_mobile">
+								<div class="mobile_header_left">
+									<button class="menu_button_mobile">
+										<img src="Assets/images/menu.png" alt="Image Not Found" >
+									</button>
+									<button class="refresh_button_mobile">
+										<img src="Assets/images/refresh.png" alt="Image not found">
+									</button>
+								</div>
+								<div class="mobile_header_center">
+									<span class="mobile_header_title">Inbox</span><span class="mobile_header_number"></span>
+								</div>
+								<div class="message_header_right">
+									<button class="compose_button_mobile">
+										<img src="Assets/images/pencil_white.png" alt="Image not found">
+									</button>
+								</div>
+							</div>
+							<div class="col-12 search_bar_mobile">
+								<img src="Assets/images/search.png" alt="Image Not Found" >
+								<input type="text" placeholder="Search">
+							</div>
+						</div>
+						<div class="col-12 overflow-auto  message_list">
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9  col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 d-flex  message  p-2">
+								<div class="col-1 col-lg-1 justify-content-evenly align-items-center d-flex  message_body_left">
+									<input class="form-check-input border-secondary" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+									<img src="Assets/images/star.png" alt="Image not found" class="message_star d-none d-md-flex">
+								</div>
+								<div class="col-9 col-lg-10 d-flex flex-column flex-md-row">
+									<div class="sender_name d-flex me-2"><span>Techversant Infotech</span></div>
+									<div class="message_content  d-flex flex-column flex-md-row justify-content-start">
+										<span class="message_dark">Daily Email Digest</span>
+										<span class="message_content_seperator d-none d-md-flex">-</span>
+										<span class="message_light   ">Daily Digest Wednesday, 18 Sep Hello, Abhijith Naiju  On leave today (4)  view all hr</span>
+									</div>
+								</div>
+								<div class="col-2 col-lg-1 align-items-center d-flex justify-content-end">
+									<div class="message_body_right d-flex flex-column align-items-end">
+										<div class="message_hover_display">
+											<img src="Assets/images/archive-box.png" alt="Image not found">
+											<img src="Assets/images/trash.png" alt="Image not found">
+											<img src="Assets/images/message_2.png" alt="Image not found">
+											<img src="Assets/images/clock_2.png" alt="Image not found">
+										</div>
+										<span class="message_light message_time">9:28 AM</span>
+										<button class="hidden_star d-block d-md-none">
+											<img src="Assets/images/star.png" alt="Image not found" >
+										</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
